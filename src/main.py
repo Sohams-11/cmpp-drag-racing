@@ -13,3 +13,10 @@ print("Stamina: " + str(Stamina_1))
 print("DMG_1: " + str(DMG_1))
 print("Spirit_1: " + str(Spirit_1))
 
+enemyhp = [50, 90, 80, 20, 14]
+print(enemyhp[4])
+sum=0
+for i in range(0, 5):
+    sum += enemyhp[i]
+    print(sum)
+
