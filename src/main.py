@@ -1,22 +1,30 @@
-Char_1="Death Wizard"
-Health_1 = 1000
-Shield_1 = 500
-Stamina_1 = 100
-DMG_1 = 300
-Spirit_1 = 700
+from turtle import Turtle, Screen 
+import random
+
+screen = Screen()
+screen.setup(1000, 800)
+screen.bgcolor("green")
+
+my_turtle = Turtle("turtle")
+my_turtle.color("red")
+my_turtle.shapesize(3,3)
+my_turtle.penup()
+my_turtle.goto(600, 0)
+my_turtle.position(10,5)
+my_turtle.speed(random.randint(1, 10))
+
+my_turtle_2 = Turtle("turtle")
+my_turtle_2.color("yellow")
+my_turtle_2.shapesize(3,3)
+my_turtle_2.penup()
+my_turtle_2.goto(700,0)
+my_turtle_2.position()
+my_turtle_2.speed(random.randint(1, 10))
+screen.exitonclick()
 
 
-print("CHARACER STATS: " + Char_1)
-print("Health: " + str(Health_1))
-print("Shield: " + str(Shield_1))
-print("Stamina: " + str(Stamina_1))
-print("DMG_1: " + str(DMG_1))
-print("Spirit_1: " + str(Spirit_1))
 
-enemyhp = [50, 90, 80, 20, 14]
-print(enemyhp[4])
-sum=0
-for i in range(0, 5):
-    sum += enemyhp[i]
-    print(sum)
 
+
+
+#SHAPES- arrow, turtle, circle, sauare, triangle, classic, blank 
