@@ -6,6 +6,13 @@ screen = Screen()
 screen.setup(1000, 800)
 screen.bgcolor("green")
 
+finish_line= Turtle("turtle", visible=False)
+finish_line.color("white")
+finish_line.penup()
+finish_line.goto(500,-400)
+finish_line.pendown()
+finish_line.goto(500,400)
+
 
 turtlelist=[ Turtle("turtle", visible=False), 
 Turtle("turtle", visible=False),
