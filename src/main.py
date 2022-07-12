@@ -6,6 +6,7 @@ screen = Screen()
 screen.setup(1000, 800)
 screen.bgcolor("green")
 
+
 turtlelist=[ Turtle("turtle", visible=False), 
 Turtle("turtle", visible=False),
 Turtle("turtle", visible=False),
