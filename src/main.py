@@ -23,22 +23,33 @@ Turtle("turtle", visible=False),
 Turtle("turtle", visible=False),
 Turtle("turtle", visible=False)
 ]
-    
+
+turtle_color=["red","blue","yellow","brown","pink","cyan","purple","orange","maroon"]
 
 
 for i in range(0, len(turtlelist)):
     turtlelist[i].penup()
-    turtlelist[i].color("maroon")
+    turtlelist[i].color(turtle_color[i])
     turtlelist[i].shapesize(2,2)
     turtlelist[i].goto(0, i * 50)
     turtlelist[i].showturtle()
-    turtlelist[i].speed(random.randint(1, 10))
-    turtlelist[i].setx(200)
     
+       
+    
+while True:
+    for i in range(0, len(turtlelist)):
+        turtlelist[i].forward(random.randint(1,10))
+        if turtlelist[i].pos()[0]>500:
+            screen.exitonclick()
 
   
 
-screen.exitonclick()
+
+
+
+
+
+
 
 
 
