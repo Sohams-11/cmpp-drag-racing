@@ -25,6 +25,7 @@ for i in range(0, len(turtlelist)):
     turtlelist[i].goto(0, i * 50)
     turtlelist[i].speed(random.randint(1, 10))
     turtlelist[i].showturtle()
+    turtlelist[i].setx(200)
     
 
     print(turtlelist[i])
